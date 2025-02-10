@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu de Fléchettes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body-game">
+
+    <canvas id="dartboard" width="800" height="800"></canvas>
+
+    <div class="settings-container">
+        <img id="icon" src="images/gear-solid.svg" alt="settings">
+        <div class="menu">
+            <ul class="menu">
+                <li><button id="undo-throw-button">Annuler le dernier lancer</button></li>
+                <li><button id="reset-button">Réinitialiser la partie</button></li>
+                <li><button onclick="window.location.href='index.html'">Revenir à la configuration</button></li>
+            </ul>
+        </div>
+    </div>
+    <div id="info-container">
+        <h2>Score :</h2>
+        <div id="players-list"></div>
+    </div>
+    <script src="js/game.js"></script>
+</body>
+</html>
